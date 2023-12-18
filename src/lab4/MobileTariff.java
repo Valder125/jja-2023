@@ -1,4 +1,4 @@
-package lab4;
+package Lab4;
 
 public enum MobileTariff { //Типи оплати мобільних тарифів
     POSTPAID("постійний"),
