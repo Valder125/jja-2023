@@ -1,7 +1,7 @@
-package lab3;
+package Lab3;
 
 import java.util.Objects;
-import lab4.*;
+import Lab4.*;
 
 public abstract class Subscriber implements Payable { //Абонент
     protected String name; //Ім'я

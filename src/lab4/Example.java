@@ -1,6 +1,6 @@
-package lab4;
+package Lab4;
 
-import lab3.*;
+import Lab3.*;
 
 import java.util.Arrays;
 
