@@ -24,7 +24,7 @@ public class Example {
         execute(new Methods(), 1, 1);
     }
 
-    private static String execute(Methods methods, float a, float b) { //Обробляє помилки в Methods
+    private static void execute(Methods methods, float a, float b) { //Обробляє помилки в Methods
         try {
             System.out.println(methods.add(a, b));
         }
