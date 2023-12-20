@@ -2,7 +2,7 @@ package lab9;
 
 public class Methods {
 
-    private void checkExceptions(float a, float b) throws IllegalAccessException {
+    private static void checkExceptions(float a, float b) throws IllegalAccessException {
         if (a < 0 && b > 0)
             throw new IllegalArgumentException();
         else if ((a == 0 && b != 0) && (b == 0 && a != 0))
@@ -13,22 +13,22 @@ public class Methods {
             throw new NullPointerException();
     }
 
-    public float add(float a, float b) throws IllegalAccessException { //Додавання
+    public static float add(float a, float b) throws IllegalAccessException { //Додавання
         checkExceptions(a, b);
         return a + b;
     }
 
-    public float subtract(float a, float b) throws IllegalAccessException {//Віднімання
+    public static float subtract(float a, float b) throws IllegalAccessException {//Віднімання
         checkExceptions(a, b);
         return a - b;
     }
 
-    public float multiply(float a, float b) throws IllegalAccessException { //Множення
+    public static float multiply(float a, float b) throws IllegalAccessException { //Множення
         checkExceptions(a, b);
         return a * b;
     }
 
-    public float divide(float a, float b) throws IllegalAccessException { //Ділення
+    public static float divide(float a, float b) throws IllegalAccessException { //Ділення
         checkExceptions(a, b);
         return a / b;
     }

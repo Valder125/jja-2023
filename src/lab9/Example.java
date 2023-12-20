@@ -16,6 +16,21 @@ public class Example {
                 System.out.println("Вказано null");
             }
         }
+
+        //Обробка всіх варіантів помилок
+        execute(new Methods(), -1, 1);
+        execute(new Methods(), 0, 1);
+        execute(new Methods(), 0, 0);
+        execute(new Methods(), 1, 1);
+    }
+
+    private static String execute(Methods methods, float a, float b) { //Обробляє помилки в Methods
+        try {
+            System.out.println(methods.add(a, b));
+        }
+        catch (Exception e) { //Обробка помилки
+            System.out.println(e);
+        }
     }
 
     private static String MyException(Object o) throws NullPointerException { //Метод, що повертає помилка при наявності null
