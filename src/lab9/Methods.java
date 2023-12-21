@@ -2,7 +2,7 @@ package lab9;
 
 public class Methods {
 
-    private static void checkExceptions(float a, float b) throws IllegalAccessException {
+    public static void checkExceptions(float a, float b) throws IllegalAccessException {
         if (a < 0 && b > 0)
             throw new IllegalArgumentException();
         else if ((a == 0 && b != 0) && (b == 0 && a != 0))
