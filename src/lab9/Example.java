@@ -18,15 +18,15 @@ public class Example {
         }
 
         //Обробка всіх варіантів помилок
-        execute(new Methods(), -1, 1);
-        execute(new Methods(), 0, 1);
-        execute(new Methods(), 0, 0);
-        execute(new Methods(), 1, 1);
+        check(-1, 1);
+        check(0, 1);
+        check(0, 0);
+        check(1, 1);
     }
 
-    private static void execute(Methods methods, float a, float b) { //Обробляє помилки в Methods
+    private static void check(float a, float b) { //Обробляє помилки в Methods
         try {
-            System.out.println(methods.add(a, b));
+            Methods.checkExceptions(a, b);
         }
         catch (Exception e) { //Обробка помилки
             System.out.println(e);
